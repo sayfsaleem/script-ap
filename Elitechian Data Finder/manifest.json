@@ -1,0 +1,31 @@
+{
+   "action": {
+      "default_icon": "webrobots_logo.png"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "onload.css" ],
+      "js": [ "js/jquery-3.1.1.min.js", "js/sha256.min.js", "onload.js" ],
+      "matches": [ "*://*/*" ]
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "description": "Introducing EliteChain Data Finder, a tool engineered by Umer, the co-founder of Elitechain. It extracts data from any website worldwide, presenting it in a neatly organized table format.",
+   "differential_fingerprint": "1.7d46a126d8a265e356320d410ce34db41dc44860353443d9b8db566526c5def3",
+   "icons": {
+      "128": "webrobots_logo.png",
+      "16": "webrobots_logo.png",
+      "32": "webrobots_logo.png",
+      "64": "webrobots_logo.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqJGGRgcNKZpQRZ4l4mbtQLvF/58wwR45S66fXKkQ7SicdP0Xt/PG3WrKTzsYER334TqsWGYb5NYXu1TmkG6rL+1YMedVqxoWGgeYSuqo5/0vEiZu5GNpCA6P7OrVM9vpG3PKgABUXBXg5Z+Z5lswMR33UhRyNKx6lFlckz18TxRmvQsXXScCDG/FcEtTtJnJabEBogtqqVy9G5mwUERVnNeDzjmntPWIHvQE/FNft9XcUQMvDuI7yBs5UfHb5XI2uquTXSDofJHrHTW2estOalW8feRHa7T60+V84y+pQT+46hfLTgOVhxQxoLBrHDVnk3VKFXph3lI2flErhmOBbQIDAQAB",
+   "manifest_version": 3,
+   "name": "EliteChain Data Finder",
+   "permissions": [ "webRequest", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.0"
+}
